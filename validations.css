@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* .border{
+    border: 1px solid red ;
+} */
+
+.main-form{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.header{
+    background-color: #40608e;
+    padding: 10px;
+}
+.header h1, .header p{
+    text-align: center;
+    color: white;
+    font-weight: 400px;
+}
+.star{
+    color: red;
+}
+.field{
+    display: flex;
+    padding: 8px;
+}
+.left{
+    float: right;
+    width: 40%;  
+}
+.right, .right-address{
+    float: left;
+    width: 60%;
+    display: block;
+}
+/* {
+    margin-left: 6em;
+} */
+
+.company-address{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.company-address, .address-top{
+    width: 100%;
+}
+.address-top input,.address-bottom{
+    display: flex;
+}
+.override-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.override-div i{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 14px;
+    margin-top: -12px;
+}
+.right-logo{
+    position: relative;
+    z-index: 9;
+    width: 60%;
+    height: 3.2em;
+    border: 1px dotted;
+}
+.right-logo p{
+    color:black;
+    align-items: center;
+    padding: 5px;
+}
+#select-file{
+    position: absolute;
+    left: 20px;
+    background-color:red;
+    padding: 4px 60px;
+    opacity: 0;
+}
+.btn{
+    text-align: center;
+}
+#submit{
+    background-color: rgb(19, 142, 219);
+    color: white;
+    padding: 5px 14px; 
+    font-size: 16px;
+}
+.right input[type=text],.right input[type=url],.right input[type=date],select,textarea{
+    width: 75%;
+    padding: 3px;
+   
+}
+.right-address input, .right-address select{
+    width: 94%;
+    padding: 2px;
+    gap: 2%;
+    margin-top: 10px;
+    
+}
+
+.right-address span{
+    font-size: 12px;
+    color: #8f8f8f;
+}
+
+.date-input input[type=date]{
+    /* opacity: 0; */
+    width: 100%;
+    z-index: 1;
+}
+.right i{
+    position: absolute;
+    left: 61%;
+}
+.date{
+    font-size: 14px;
+}
+.date-input{
+    position: relative;
+    /* z-index: 1; */
+    border: 1px solid;
+    margin-right: 180px;
+}
+.p-relative{
+    position: relative;
+}
+.calender input[type=text]{
+    width: 65%;
+    margin-top: 20px;
+}
+.calender-child{
+    position: absolute;
+    width: 100%;
+    top:5px; 
+    opacity: 0;
+} 
+img{
+    /* position: absolute;
+    left: 102%;
+    top: 2%; */
+    /* margin-top: 10px; */
+}
+
+.error-message, .error-message-company,
+.error-message-street,.error-message-city,
+.error-message-state,.error-message-zip,
+.error-message-country,.error-message-website,
+.error-message-additional,.error-message-dept,.emailPhone-error{
+    color: red;
+    font-size: 13px;
+    /* display: none; */
+}
+/* input[type=text]:hover, input[type=url]:hover{
+    border: 1px solid red;
+} */
+@media screen and (max-width:600px) {
+        .field,.address-bottom{
+            flex-direction: column;
+        }
+        .left input, .right input, .right-address{
+            margin-top: 0.5em;
+        }
+        .left,.right, .right-address{    
+            width: 100%;
+        }
+        .address-bottom input, .address-bottom select{
+            width: 100%;
+        }
+        /* .left, .right{
+            width: 100%;
+        } */
+        .field input[type=text],.field input[type=url], .field select,textarea, .right-logo{
+            width: 82%;
+        }
+        .right input[type=text],select,textarea{
+            margin-top: 2%;
+        }           
+        .company-address{
+            display: block;
+        }
+        #select-file{
+            padding: 0px;
+        }
+        .calender-child{
+            width: 82%;
+           
+        }
+        
+        
+}
