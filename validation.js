@@ -124,11 +124,12 @@ function validatePhone(){
         check_phone.style.border = "1px solid red";
         return false;
     }
-    else if(regex.test(phone_value.value)){
-        message.innerHTML = "";
-        check_phone.style.border = "1px solid green";
-        return true;
+    else if((regex.test(phone_value.value)) && (!phone_value.value.startsWith("9"))){
+        message.innerHTML = "Phone Number should start with 9";
     }
+    // else if(!phone_value.value.startsWith("9")){
+    //     message.innerHTML = "Phone Number should start with 9";
+    // }
     else{
         message.innerHTML = "Should contain exactly 10 digits";
         check_phone.style.border = "1px solid red";
